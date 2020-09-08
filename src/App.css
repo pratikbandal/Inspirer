@@ -1,38 +1,171 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+  background-color: #fafafa;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app__header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 20px;
+  background-color: white;
+  border-bottom: 1px solid lightgray;
+  object-fit: contain;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app__signup {
   display: flex;
   flex-direction: column;
+}
+
+.app__headerImage {
+  cursor: pointer;
+  object-fit: contain;
+  width: 100px;
+}
+
+@media only screen and (min-width: 750px) {
+  .app_posts {
+    padding: 20px;
+  }
+
+  .app_loginContainer {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+
+.app__headerImageSignIn {
+  object-fit: contain;
+  width: 100px;
+  margin-bottom: 40px;
+}.app__headerImageSignUp {
+  object-fit: contain;
+  width: 100px;
+  margin-bottom: 10px;
+}.app_signup_heading {
+  margin-bottom: 40px;
+}
+
+
+.app_signInPassword {
+  margin-bottom: 10px;
+}
+.app_signUpPassword {
+  margin-bottom: 10px;
+}
+
+.app__avatar__upload {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+#app_signInButton {
+  margin-bottom: 10px;
+}
+
+.app_forgotPassword {
+  font-size: 12px;
+  color: rgba(var(--fe0,0,55,107),1)
+}
+
+.reset_header {
+  flex: 0 0 auto;
+  padding: 24px 24px 0 24px;
+}.reset_header_span {
+  font-size: 20px;
+  font-family: "Google Sans",sans-serif;
+  font-weight: 500;
+  line-height: 28px;
+  display: inline-flex;
+  margin: 0 32px 16px 0;
+  color: rgba(0,0,0,0.87);
+}.reset_email_body {
+  padding: 0 24px;
+}.reset_email {
+  font-size: 14px;
+  margin: 0 0 20px 0;
+  color: rgba(0,0,0,.54);
+  line-height: 20px;
+}.reset_email_input {
+  width: 50%;
+  padding: 5px;
+  border: 1px solid lightgray;
+}.reset_footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  justify-content: flex-end;
+  min-height: 36px;
+  padding: 24px;
+}.reset_footer_cancel {
+  color: rgba(0,0,0,.54);
+  margin: 0 0 0 8px;
+  font-weight: 500;
+  transition: box-shadow .2s ease,background-color .2s ease;
+}.reset_footer_send {
+  background-color: rgb(26,115,232);
+  box-shadow: none;
+  color: #fff;
+  margin: 0 0 0 8px;
+}
+.md-button {
+  padding-left: 16px;
+  padding-right: 16px;
+  border: 0px;
+  border-radius: 8px;
+  text-transform: none;
+  letter-spacing: .25px;
+  min-width: 60px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  min-height: 36px;
+  line-height: 36px;
+  vertical-align: middle;
+  -webkit-box-align: center;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  text-decoration: none;
+  overflow: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+.reset_cancel_icon {
+  position: absolute;
+  right: 24px;
+  top: 24px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+
+@media only screen and (max-width: 750px) {
+  .app_posts {
+    padding-bottom: 20px; 
+    padding-top: 20px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .app_loginContainer_ {
+    display: flex;
   }
+
+  .app_logout {
+    float: right;
+  }
+
+  .reset_email_input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid lightgray;
+  }
+  
 }
